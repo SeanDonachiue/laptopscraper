@@ -1,0 +1,17 @@
+{
+  "name": "buttwipe",
+  "version": "0.0.1",
+  "scripts": {
+    "start" : "node testfile",
+    "deploy": "gcloud beta functions deploy scrapeGecko3 --entry-point helloPubSub --trigger-topic cron-topic --runtime nodejs16 --memory 1024MB"
+  },
+  "dependencies": {
+    "@google-cloud/pubsub": "^3.7.1",
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.11",
+    "http-proxy-agent": "^7.0.0",
+    "https-proxy-agent": "^7.0.0",
+    "mongoose": "^6.4.3",
+    "puppeteer": "^14.4.1"
+  }
+}
